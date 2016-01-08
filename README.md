@@ -4,22 +4,30 @@ We "evolve" a car-like creature with a scorpion-like tail on the basis of the am
 
 Current parameters that we evolve:
 
+
 Torso:
+
 * The width of the torso.
 * The height of the torso.
 * The density of the torso.
 * The friction of the torso.
 
+
 Wheels:
+
 * The radius of the wheel.
 * The density of the wheel.
 * The friction of the wheel.
 
+
 Wheel Joints:
+
 * The speed of the motor.
 * The maximum torque of the motor.
 
+
 Tail:
+
 * The number of vertebrae in the tail.
 * The width of the root vertebra.
 * The height of the root vertebra.
@@ -31,7 +39,9 @@ Tail:
 * The factor by which the density of each vertebra changes along the tail from root to end.
 * The factor by which the torque of each vertebra changes along the tail from root to end.
 
+
 Mind:
+
 * The distance threshold at which the creature will begin attacking the wall. This distance is measured by the creature's Eye, then sent to its TailNeuron during the "thinking" step of the simulation.
 * The amount of time the creature spends in each position of its movement pattern during the attacking phase.
 * The maximum speed, by phase (at rest or attacking), that the creature will try to move the joints on its tail. The actual speed that it tries to move a given tail joint depends on the difference between that joint's angle and the angle that that joint is assigned for the current position in that creature's movement pattern.
@@ -47,9 +57,10 @@ A few other items to note:
 
 * Most documentation is inline with code, but some of it might be just a tiny bit out of date since we haven't gone through with a fine-tooth comb and updated it after our mad rush the night before our demo day. The demo code is messy. Don your hazmat suit before entering.
 
-* Look in www/js/app/Body     to see how creature body parts are designed,
-       in www/js/app/Creature to see how creatures are designed,
-       in www/js/app/Mind     to see how the neural networks that control the creatures are designed.
+* Look in :
+  * `www/js/app/Body`     to see how creature body parts are designed,
+  * `www/js/app/Creature` to see how creatures are designed,
+  * `www/js/app/Mind`     to see how the neural networks that control the creatures are designed.
 
 * The aspect ratio of your viewport might effect how the creatures evolve, because this affects the aspect ratio of the environment.
 
